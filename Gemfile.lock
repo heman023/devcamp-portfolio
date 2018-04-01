@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/heman023/StevenViewTool
+  revision: cd71bf56cd4237bf1d3b702adae5139d53cc2a00
+  specs:
+    steven_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -192,6 +198,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
+  steven_view_tool!
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
