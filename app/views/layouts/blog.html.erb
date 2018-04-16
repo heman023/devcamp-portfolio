@@ -25,7 +25,7 @@
             <a class="text-muted" href="#">Subscribe</a>
           </div>
           <div class="col-4 text-center">
-            <a class="blog-header-logo text-dark" href="#">Large</a>
+            <a class="blog-header-logo text-dark" href="#">My Blog</a>
           </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
             <a class="text-muted" href="#">
@@ -34,6 +34,7 @@
             <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
           </div>
         </div>
+        <%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
       </header>
     </div>
       <!--End of blog header-->
@@ -80,20 +81,17 @@
           </div>
         </aside>
         <!--end of sidebar-->
-
-        <!--start of footer-->
-        <footer class="blog-footer">
-          <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-          <p>
-            <a href="#">Back to top</a>
-          </p>
-        </footer>
-        <!--end of footer-->
-
-        <%= render "shared/nav", location: 'bottom' %>
-
-        <%= source_helper("blog") %>
       </div>
+        <!--start of footer-->
+      <footer class="blog-footer">
+        <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        <p>
+          <a href="#">Back to top</a>
+        </p>
+      </footer>
+      <!--end of footer-->
+
+      <%= source_helper("blog") %>
     </main>
   </body>
 </html>
